@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Omar Online Coaching</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: yellow;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-top: 30px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-container button {
+            background-color: yellow;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #f1c40f;
+        }
+        .photos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .photos img {
+            width: 30%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: yellow;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: yellow;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="photos">
+        <img src="a-promotional-digital-image-with-the-tex_7KHXhWcrQ8uYZsa7iNPa1A_uww3o0V6RwmapC8QBnkzFQ.jpeg" title="gym trainer" alt="Gym Training">
+        
+    </div>
+    <header>
+        <h1>Cap Omar Online Coaching</h1>
+        <p>Achieve your fitness goals with personalized coaching.</p>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="text" id="number" placeholder="Your Phone Number" required>
+                <input type="text" id="instagram" placeholder="Your Instagram Handle" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+       
+    </div>
+
+    <footer>
+        <p>Contact me via Instagram: <a href="https://www.instagram.com/omar_medhat44" target="_blank">@omar_medhat44</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const number = document.getElementById('number').value;
+            const instagram = document.getElementById('instagram').value;
+
+            const emailBody = `Name: ${name}%0APhone Number: ${number}%0AInstagram: ${instagram}`;
+            window.location.href = `mailto:omarali811972@gmail.com?subject=New Contact&body=${emailBody}`;
+        });
+    </script>
+</body>
+</html>
